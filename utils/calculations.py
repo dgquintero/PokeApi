@@ -11,7 +11,7 @@ def calculate_stats(berries):
         min_growth_time = int(np.min(growth_times))
         median_growth_time = float(np.median(growth_times))
         max_growth_time = int(np.max(growth_times))
-        variance_growth_time = float(np.variance(growth_times))
+        variance_growth_time = float(np.var(growth_times))
         mean_grow_time = float(np.mean(growth_times))
 
         frequency_growth_time = {}
