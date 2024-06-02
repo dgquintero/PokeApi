@@ -28,6 +28,7 @@ This project is a Poke-Berries Statistics API that fetches data from the PokeAPI
     "mean_growth_time": "", // time, float
     "frequency_growth_time": "" // time, {growth_time: frequency, ...}
 }
+````
 
 ## Installation
 
