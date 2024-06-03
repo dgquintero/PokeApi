@@ -53,7 +53,7 @@ def berry_histogram():
     growth_time = [berry['growth_time'] for berry in data]
 
     plt.figure(figsize=(10, 6))
-    plt.hist(growth_time, bins =range(min(growth_time), max(growth_time) + 1, 1), edcolor = 'black')
+    plt.hist(growth_time, bins =range(min(growth_time), max(growth_time) + 1, 1), edgecolor = 'black')
     plt.title('Histogram of Berry growth time')
     plt.xlabel('Growth time')
     plt.ylabel('Frequency')
