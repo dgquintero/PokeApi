@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - POKEAPI_BASE_URL=https://pokeapi.co/api/v2
+      - CACHE_TIMEOUT=120
+    volumes:
+      - .:/app
+
