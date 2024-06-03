@@ -9,3 +9,4 @@ Flask-Caching
 pytest
 numpy
 gunicorn
+matplotlib
