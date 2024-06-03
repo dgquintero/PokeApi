@@ -5,6 +5,14 @@
 
 This project is a Poke-Berries Statistics API that fetches data from the PokeAPI and computes various statistics about berry growth times. The API provides endpoints `/allBerryStats` which returns the names of all berries along with statistical data about their growth times and includes an endpoint to view a histogram of berry growth times `/showHistogram`.
 
+## Deployed Services
+
+The application is deployed and can be accessed through the following URLs:
+
+- [Home](https://dgquintero.pythonanywhere.com/)
+- [Berry Statistics](https://dgquintero.pythonanywhere.com/allBerryStats)
+- [Berry Growth Time Histogram](https://dgquintero.pythonanywhere.com/showHistogram)
+
 ## Features
 
 - Fetches data from the PokeAPI to get berry details.
