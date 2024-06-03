@@ -3,7 +3,7 @@
 
 ## Description
 
-This project is a Poke-Berries Statistics API that fetches data from the PokeAPI and computes various statistics about berry growth times. The API provides a single endpoint `/allBerryStats` which returns the names of all berries along with statistical data about their growth times.
+This project is a Poke-Berries Statistics API that fetches data from the PokeAPI and computes various statistics about berry growth times. The API provides endpoints `/allBerryStats` which returns the names of all berries along with statistical data about their growth times and includes an endpoint to view a histogram of berry growth times `/showHistogram`.
 
 ## Features
 
@@ -72,6 +72,44 @@ This project is a Poke-Berries Statistics API that fetches data from the PokeAPI
     ```bash
     http://127.0.0.1:5000/allBerryStats
     ```
+
+3. View the histogram image directly:
+    ```bash
+    http://127.0.0.1:8000/berryHistogram
+    ```
+
+4. View the HTML page displaying the histogram:
+    ```bash
+    http://127.0.0.1:8000/showHistogram
+    ```
+
+## Running with Docker
+
+1. Build the Docker image:
+    ```bash
+    docker-compose build
+    ```
+
+2. Run the Docker container:
+    ```bash
+    docker-compose up
+    ```
+
+3. Access the API:
+    ```bash
+    http://127.0.0.1:8000/allBerryStats
+    ```
+
+4. View the histogram image directly:
+    ```bash
+    http://127.0.0.1:8000/berryHistogram
+    ```
+
+5. View the HTML page displaying the histogram:
+    ```bash
+    http://127.0.0.1:8000/showHistogram
+    ```
+
 
 ## Testing
 
