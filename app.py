@@ -52,11 +52,18 @@ def berry_histogram():
     data = fetch_all_berry_data()
     growth_time = [berry['growth_time'] for berry in data]
 
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(12, 7))
     plt.hist(growth_time, bins =range(min(growth_time), max(growth_time) + 1, 1), edgecolor = 'black')
-    plt.title('Histogram of Berry growth time')
-    plt.xlabel('Growth time')
-    plt.ylabel('Frequency')
+    plt.title('Histogram of Berry growth times', fontsize=16)
+    plt.xlabel('Growth time (Hours)', fontsize=14)
+    plt.ylabel('Frequency (Number of plants)', fontsize=14)
+
+    counts, bins, patches = plt.hist(growth_time, bins=range(min(growth_time), max(growth_time) + 1, 1), edgecolor='black')
+    for count, patch in zip(counts, patches):
+        plt.text(patch.get_x() + patch.get_width() / 2, count, int(count), ha='center', va='bottom', fontsize=12)
+
+    plt.xticks(range(min(growth_time), max(growth_time) + 1))
+    plt.grid(axis='y', alpha=0.75)
 
     img_path = "static/images/berry_histogram.png"
     plt.savefig(img_path, format='png')
